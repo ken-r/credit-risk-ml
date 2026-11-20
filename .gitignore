@@ -223,5 +223,8 @@ __marimo__/
 .streamlit/secrets.toml
 
 # Local datasets
-data/*
-!data/.gitkeep
+data/**
+# Do not ignore directories directly inside data/
+!data/*/
+# Do not ignore .gitkeep files within those directories
+!data/*/.gitkeep
